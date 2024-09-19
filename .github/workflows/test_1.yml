@@ -52,10 +52,7 @@ jobs:
     
     steps: 
       - name: Test
-        env: 
-          STEP_MY_VAR: Nivel Step
-
-        run: echo "Valor $STEP_MY_VAR"
+        run: echo "Valor ${{ vars.MY_VARIABLE_2 }}"
 
     
 
