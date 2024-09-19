@@ -30,7 +30,12 @@ jobs:
 
     - name: Setup Node.js environment
       uses: actions/setup-node@v4.0.3
+      with:
+        node-version: latest
 
     - name: node version
       run: node --version
+
+    - name: install
+      run: npm install
   
